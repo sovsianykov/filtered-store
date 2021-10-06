@@ -17,14 +17,17 @@ const ProductCategoryRow = ({
       </tr>
       {products.map((product, i) => {
         if (inStockOnly && !product.stocked) {
-          return;
+          return <tr key={`${i}${Date.now()}`}><td/></tr> ;
+
         }
         if (product.name.indexOf(filteredText) === -1) {
-          return;
+
+          return <tr key={`${i}${Date.now()}`}><td/></tr>
         }
         if (product.category === productC.category) {
-          return <ProductRow product={product} key={i} />;
+          return <ProductRow product={product} key={product.name} />;
         }
+        // return <tr key={`${i}${Date.now()}`}><td/></tr> ;
       })}
     </>
   );

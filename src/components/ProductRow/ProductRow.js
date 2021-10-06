@@ -7,7 +7,7 @@ const ProductRow = ({product}) => {
     const classNames = useMemo(() => cn({
         [styles.productRow] :true,
         [styles.productRow_active] : !product.stocked,
-    }),[])
+    }),[product])
     return (
      <>
          <tr className={classNames}>
