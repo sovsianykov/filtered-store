@@ -1,0 +1,22 @@
+.productTable {
+  width: 100%;
+  tr {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+      .thRowsLeft {
+        color: #5b5be8;
+        margin-right: auto;
+        padding: 10px;
+      }
+
+      .thRowsRight {
+        padding: 10px;
+        color: #0d0df5;
+        margin-left: auto;
+
+    }
+  }
+}
