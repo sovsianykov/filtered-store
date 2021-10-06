@@ -27,7 +27,7 @@ const ProductCategoryRow = ({
         if (product.category === productC.category) {
           return <ProductRow product={product} key={product.name} />;
         }
-        // return <tr key={`${i}${Date.now()}`}><td/></tr> ;
+        return <tr key={`${i}${Date.now()}`}><td/></tr> ;
       })}
     </>
   );
