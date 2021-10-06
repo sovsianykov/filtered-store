@@ -1,9 +1,14 @@
 .searchBar {
+  input {
+    margin-top: 20px;
+    padding:  5px 10px;
+
+  }
   .spanGreen {
     font-family: "Roboto Light",sans-serif;
-    color : #299f0e;
+    color : #22810b;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: .1rem;
   }
 }

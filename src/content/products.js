@@ -22,5 +22,9 @@ export const products =  [
 	{	category: "Electronics",
 			 price: "$199.99",
 		 stocked: true,
-				name: "Nexus 7" }
+				name: "Nexus 7" },
+	{	category: "Electronics",
+		price: "$109.99",
+		stocked: false,
+		name: "Nokia 3110" }
 ];

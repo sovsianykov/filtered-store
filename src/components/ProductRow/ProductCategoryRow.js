@@ -1,4 +1,4 @@
-import React from "react";
+import React, {memo} from "react";
 import styles from "./ProductRow.module.scss";
 import ProductRow from "./ProductRow";
 
@@ -16,7 +16,6 @@ const ProductCategoryRow = ({
         </th>
       </tr>
       {products.map((product, i) => {
-        console.log(product.name, filteredText);
         if (inStockOnly && !product.stocked) {
           return;
         }
@@ -31,4 +30,4 @@ const ProductCategoryRow = ({
   );
 };
 
-export default ProductCategoryRow;
+export default memo(ProductCategoryRow);

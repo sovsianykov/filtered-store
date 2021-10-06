@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./ProductTable.module.scss";
-import ProductRow from "../ProductRow/ProductRow";
 import ProductCategoryRow from "../ProductRow/ProductCategoryRow";
 
 const ProductTable = ({ products, filteredText, inStockOnly }) => {

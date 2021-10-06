@@ -1,7 +1,6 @@
-import React, { useMemo} from 'react';
+import React, {memo, useMemo} from 'react';
 import styles from './ProductRow.module.scss';
 import cn from 'classnames'
-import ProductCategoryRow from "./ProductCategoryRow";
 
 
 const ProductRow = ({product}) => {
@@ -19,4 +18,4 @@ const ProductRow = ({product}) => {
     );
 };
 
-export default ProductRow;
+export default memo(ProductRow);
